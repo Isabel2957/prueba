@@ -1,0 +1,19 @@
+
+
+<div>
+  <h1>CompuPlaza</h1>
+  <a routerLink="/login">Login</a> |
+  <a routerLink="/products">Products</a>
+  <a ></a>
+  <h1>Marcas de computadoras</h1>
+  <ul>
+    <li *ngFor="let product of productos">
+      <h2>{{product.name}} / ${{product.price}}</h2>
+      <p>{{product.description}}</p>
+    </li>
+  </ul>
+</div>
+<div>
+  <button (click)="sumar($event)">Presióname {{counter}}</button>
+  <router-outlet></router-outlet>
+</div>
